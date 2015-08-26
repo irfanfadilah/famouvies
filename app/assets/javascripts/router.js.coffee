@@ -1,4 +1,6 @@
 # For more information see: http://emberjs.com/guides/routing/
 
 Famouvies.Router.map ->
-  @route "hello"
+  # @resource "movies" => This Deprecated
+  @route "movies", { resetNamespace: true }
+  @route "movie", { path: "/movies/:id" }
