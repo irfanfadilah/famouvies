@@ -28,4 +28,6 @@ ActiveRecord::Schema.define(version: 20150902075437) do
     t.datetime "updated_at",   null: false
   end
 
+  add_index "movies", ["tmdb"], name: "index_movies_on_tmdb", unique: true
+
 end

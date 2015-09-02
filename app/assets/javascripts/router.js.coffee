@@ -3,4 +3,4 @@
 Famouvies.Router.map ->
   # @resource "movies" => This Deprecated
   @route "movies", { resetNamespace: true }
-  @route "movie", { path: "/movies/:id" }
+  @route "movie", { path: "/movies/:tmdb" }

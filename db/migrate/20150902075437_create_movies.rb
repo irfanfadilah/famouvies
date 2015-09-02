@@ -11,8 +11,8 @@ class CreateMovies < ActiveRecord::Migration
       t.float :popularity
       t.float :rating
       t.integer :vote
-
       t.timestamps null: false
     end
+    add_index :movies, :tmdb, unique: true
   end
 end

@@ -3,7 +3,7 @@
 <div class="media">
   <div class="media-left">
     <a href="javascript:void(0)">
-      <img src="http://image.tmdb.org/t/p/w300{{model.poster_path}}" class="media-object">
+      <img src="http://image.tmdb.org/t/p/w300{{model.poster}}" class="media-object">
     </a>
   </div>
   <div class="media-body">
@@ -11,8 +11,8 @@
     <hr>
     <ul class="list-unstyled">
       <li><strong>Release:</strong> {{model.release_date}}</li>
-      <li><strong>Rating:</strong> {{model.vote_average}}</li>
-      <li><strong>Vote:</strong> {{model.vote_count}}</li>
+      <li><strong>Rating:</strong> {{model.rating}}</li>
+      <li><strong>Vote:</strong> {{model.vote}}</li>
       <li><strong>Popularity:</strong> {{model.popularity}}</li>
     </ul>
     <p class="text-justify">{{model.overview}}</p>
@@ -20,5 +20,5 @@
 </div>
 <hr>
 <div class="thumbnail">
-  <img src="http://image.tmdb.org/t/p/w1920{{model.backdrop_path}}">
+  <img src="http://image.tmdb.org/t/p/w1920{{model.backdrop}}">
 </div>
